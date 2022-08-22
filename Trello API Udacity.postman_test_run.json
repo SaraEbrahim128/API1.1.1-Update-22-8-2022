@@ -1,0 +1,246 @@
+{
+	"id": "0a94ffb7-2796-4aef-bd13-02c9a1703f47",
+	"name": "Trello API Udacity",
+	"timestamp": "2022-08-20T05:38:00.561Z",
+	"collection_id": "10266715-6e229fa5-1b83-441d-bddf-5f8b0d6aaa81",
+	"folder_id": 0,
+	"environment_id": "10266715-0712a0d4-c21c-42d8-8112-c8532d1b389b",
+	"totalPass": 13,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c9f16f2b-cd8b-4c10-98a8-50a94eaa6852",
+			"name": "Create Board",
+			"url": "https://api.trello.com/1/boards/?name=%22testAPI%22&key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870&defaultLists=false",
+			"time": 609,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"permissionLevel Is Private": true,
+				"canBePublic Is true": true,
+				"canInvite  Is true": true
+			},
+			"testPassFailCounts": {
+				"permissionLevel Is Private": {
+					"pass": 1,
+					"fail": 0
+				},
+				"canBePublic Is true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"canInvite  Is true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				609
+			],
+			"allTests": [
+				{
+					"permissionLevel Is Private": true,
+					"canBePublic Is true": true,
+					"canInvite  Is true": true
+				}
+			]
+		},
+		{
+			"id": "96c6bae2-2177-4aaa-b413-7d0e3d344d2f",
+			"name": "Open Boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870",
+			"time": 237,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Number Of Open Boards Will be Above One": true
+			},
+			"testPassFailCounts": {
+				"Number Of Open Boards Will be Above One": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Number Of Open Boards Will be Above One": true
+				}
+			]
+		},
+		{
+			"id": "0eb0f562-01ae-4761-b304-05f816a327df",
+			"name": "Delete Board",
+			"url": "https://api.trello.com/1/boards/62f8095f3fe54200b0a7cc9b?key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870",
+			"time": 194,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Check that Status code of is 200": true
+			},
+			"testPassFailCounts": {
+				"Check that Status code of is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Check that Status code of is 200": true
+				}
+			]
+		},
+		{
+			"id": "877d3690-bfc9-4824-9131-21ceecbbc449",
+			"name": "Create List",
+			"url": "https://api.trello.com/1/lists?name=UDACITYAPITRLLO&idBoard=5c9106d994e4d68559c09847&key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870",
+			"time": 307,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that id key is exist": true,
+				"Verify that name key is exist": true,
+				"Verify that idBoard key is exist": true,
+				"Verify that closed key is false": true,
+				"Verify that limits are empty object": true
+			},
+			"testPassFailCounts": {
+				"Verify that id key is exist": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that name key is exist": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that idBoard key is exist": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that closed key is false": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that limits are empty object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				307
+			],
+			"allTests": [
+				{
+					"Verify that id key is exist": true,
+					"Verify that name key is exist": true,
+					"Verify that idBoard key is exist": true,
+					"Verify that closed key is false": true,
+					"Verify that limits are empty object": true
+				}
+			]
+		},
+		{
+			"id": "1902d386-2646-4d79-9086-0dc37d2326a8",
+			"name": "Lists On Board",
+			"url": "https://api.trello.com/1/boards/5c9106d994e4d68559c09847/lists?key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"verify that board contains at least 3 lists": true
+			},
+			"testPassFailCounts": {
+				"verify that board contains at least 3 lists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"verify that board contains at least 3 lists": true
+				}
+			]
+		},
+		{
+			"id": "cdc3cb8b-d685-43ac-99f4-6d2e3a195be1",
+			"name": "Archive or un-archive a list",
+			"url": "https://api.trello.com/1/lists/63007203c3432d00fffebd92/closed?value=true&key=7c1dbfa2967e956353c0f1400ab6d5e4&token=4be447a74bc0d4715352b3d6e8c2008f71ad3d77272c67fd85845fe3a90fc870",
+			"time": 400,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check that Status code is 200": true,
+				"Response Headers include a key called Set-Cookie and its value contains the text isEnterpriseAdmin%3Dfalse": true
+			},
+			"testPassFailCounts": {
+				"Check that Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Headers include a key called Set-Cookie and its value contains the text isEnterpriseAdmin%3Dfalse": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				400
+			],
+			"allTests": [
+				{
+					"Check that Status code is 200": true,
+					"Response Headers include a key called Set-Cookie and its value contains the text isEnterpriseAdmin%3Dfalse": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1986,
+	"collection": {
+		"requests": [
+			{
+				"id": "c9f16f2b-cd8b-4c10-98a8-50a94eaa6852",
+				"method": "POST"
+			},
+			{
+				"id": "96c6bae2-2177-4aaa-b413-7d0e3d344d2f",
+				"method": "GET"
+			},
+			{
+				"id": "0eb0f562-01ae-4761-b304-05f816a327df",
+				"method": "DELETE"
+			},
+			{
+				"id": "877d3690-bfc9-4824-9131-21ceecbbc449",
+				"method": "POST"
+			},
+			{
+				"id": "1902d386-2646-4d79-9086-0dc37d2326a8",
+				"method": "GET"
+			},
+			{
+				"id": "cdc3cb8b-d685-43ac-99f4-6d2e3a195be1",
+				"method": "PUT"
+			}
+		]
+	}
+}

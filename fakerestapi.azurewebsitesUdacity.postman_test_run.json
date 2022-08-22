@@ -1,0 +1,150 @@
+{
+	"id": "87cb80c5-8ac1-4774-897b-f09033ba6ea0",
+	"name": "fakerestapi.azurewebsitesUdacity",
+	"timestamp": "2022-08-11T01:36:26.256Z",
+	"collection_id": "10266715-747605e5-9c17-452c-854f-5b565cef50bd",
+	"folder_id": 0,
+	"environment_id": "10266715-0712a0d4-c21c-42d8-8112-c8532d1b389b",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7a5a48c6-f9f7-431b-b13d-ad4ab5e6b5f0",
+			"name": "Login As Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 91,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				91
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2252aaee-666d-43c4-9ea2-9241b698c5f9",
+			"name": "Register As New Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 74,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				74
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74f735d3-e5ed-43a0-ac42-aab7bc9dfa83",
+			"name": "BookId",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/09",
+			"time": 74,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				74
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c0009a87-c884-482e-aab2-d35760d94a47",
+			"name": "Author Id",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0000000009",
+			"time": 71,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				71
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b589f898-629a-4037-8f05-d53fc19d4dfb",
+			"name": "Put Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/11%0A",
+			"time": 78,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				78
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2df9672e-45f5-4045-8909-0da0aff541ae",
+			"name": "Delete Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/1",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				70
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 458,
+	"collection": {
+		"requests": [
+			{
+				"id": "7a5a48c6-f9f7-431b-b13d-ad4ab5e6b5f0",
+				"method": "GET"
+			},
+			{
+				"id": "2252aaee-666d-43c4-9ea2-9241b698c5f9",
+				"method": "POST"
+			},
+			{
+				"id": "74f735d3-e5ed-43a0-ac42-aab7bc9dfa83",
+				"method": "GET"
+			},
+			{
+				"id": "c0009a87-c884-482e-aab2-d35760d94a47",
+				"method": "GET"
+			},
+			{
+				"id": "b589f898-629a-4037-8f05-d53fc19d4dfb",
+				"method": "PUT"
+			},
+			{
+				"id": "2df9672e-45f5-4045-8909-0da0aff541ae",
+				"method": "DELETE"
+			}
+		]
+	}
+}
